@@ -1,3 +1,4 @@
+
 var express = require("express");
 var app = express();
 var cors = require("cors");
@@ -13,14 +14,14 @@ app.get("/",(req,res) => {
 app.post("/bfhl",(req,res) => {
     var a = {};
     var status = true;
-    var User_Id = "chetanShivramwar_03012001";
+    var User_Id = "chetan_shivramwar_03012001";
     var colleage_Roll_Number = "0827CS191071"
     var Email_Id = "chetanshivramwarcs19@acropolis.in"; 
     var body = req.body.data;
     var alpha = [];
     var number = [];
     var cnt1 = 0,cnt2 = 0;
-    cs = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     for(i = 0;i<body.length;i++){
         var flag = false;
         for(let j = 0; j < str.length; j++){
